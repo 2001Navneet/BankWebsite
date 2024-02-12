@@ -229,3 +229,10 @@ const slider = function () {
   });
 };
 slider();
+// mobile navigation
+const navBtn = document.querySelector('.btn-mobile-nav');
+const headerEl = document.querySelector('.header');
+
+navBtn.addEventListener('click', function () {
+  headerEl.classList.toggle('nav__open');
+});
